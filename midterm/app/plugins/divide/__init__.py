@@ -17,7 +17,7 @@ class DivideCommand(Command):
             
             answer = n1 / n2
             logging.info(f'{n1} divided by {n2} is {answer}')
-            print(f"{n1} divided by {n2} is {result}")
+            print(f"{n1} divided by {n2} is {answer}")
 
         except ValueError:
             print("Please enter valid numbers.")
