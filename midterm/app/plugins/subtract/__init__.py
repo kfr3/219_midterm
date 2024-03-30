@@ -1,5 +1,6 @@
 from app.commands import Command
 import logging
+import csv
 
 class SubtractCommand(Command):
     def execute(self):
@@ -13,3 +14,9 @@ class SubtractCommand(Command):
 
         except ValueError:
             print("Please enter valid numbers.")
+            logging.error(f'User entered invalid number')
+
+        with open('./data/history.csv', 'a', newline='') as file:
+            writer = csv.writer(file)
+            writer.writerow(['subtract', n1, n2, answer])
+            
