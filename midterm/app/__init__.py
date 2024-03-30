@@ -2,10 +2,10 @@ import os
 import pkgutil
 import importlib
 import sys
-from app.commands import CommandHandler, Command
 import logging
-from dotenv import load_dotenv
 import logging.config
+from dotenv import load_dotenv
+from app.commands import CommandHandler, Command
 
 class App:
     def __init__(self):
