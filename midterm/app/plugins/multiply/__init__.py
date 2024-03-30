@@ -11,6 +11,7 @@ class MultiplyCommand(Command):
             n2 = float(n2)
             answer = n1 * n2
             logging.info(f'{n1} multipied by {n2} is {answer}')
+            print(f"{n1} multipled by {n2} is {result}")
 
         except ValueError:
             print("Please enter valid numbers.")

@@ -1,6 +1,6 @@
-import os
 import pkgutil
 import importlib
+import os
 import sys
 import logging
 import logging.config
@@ -73,8 +73,3 @@ class App:
             sys.exit(0)  # Assuming a KeyboardInterrupt should also result in a clean exit.
         finally:
             logging.info("Application shutdown.")
-
-
-if __name__ == "__main__":
-    app = App()
-    app.start()

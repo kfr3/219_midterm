@@ -16,12 +16,12 @@ class CsvCommand(Command):
             logging.error(f"The directory '{data_dir}' is not writable.")
             return
 
-        calculator_abbrevations = {
+        '''calculator_abbrevations = {
             'add': self.add,
             'subtract': self.subtract,
             'multiply': self.multiply,
             'divide': self.divide
-        }
+        }'''
         
         csv_file_path = os.path.join(data_dir, 'history.csv')
         logging.info(f'the relative path to save my file is {csv_file_path}')
@@ -60,5 +60,8 @@ class CsvCommand(Command):
     def divide(self, n1, n2):
         answer = n1 / n2
         logging.info(f'{n1} divided by {n2} equals {answer}')
+
+    def clear():
+        logging.info(f'Cleared csv file')
 
     

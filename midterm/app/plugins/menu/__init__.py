@@ -3,10 +3,11 @@ import logging
 
 class MenuCommand(Command):
     def execute(self):
-        logging.info(f'Here is a list of the commands you can use:')
-        logging.info(f'add')
-        logging.info(f'subtract')
-        logging.info(f'multiply')
-        logging.info(f'divide')
-        logging.info(f'menu')
+        print(f'Here is a list of the commands you can use:')
+        print(f'add')
+        print(f'subtract')
+        print(f'multiply')
+        print(f'divide')
+        print(f'menu')
+        print(f'clear')
         

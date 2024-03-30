@@ -12,10 +12,12 @@ class DivideCommand(Command):
 
             if n2 == 0:
                 logging.error(f'User inputted zero as second number in division function.')
+                print(f"You cannot divide by zero. Please enter a different number")
                 return
             
             answer = n1 / n2
             logging.info(f'{n1} divided by {n2} is {answer}')
+            print(f"{n1} divided by {n2} is {result}")
 
         except ValueError:
             print("Please enter valid numbers.")
